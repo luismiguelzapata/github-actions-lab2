@@ -1,6 +1,9 @@
 name: Installing Python
 
-on: [push]
+on:
+  #push:
+  schedule:
+    - cron: "11 10 2 9 *"
 
 jobs:
   build:
